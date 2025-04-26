@@ -46,7 +46,7 @@
     }
   </style>
 </head>
-<body class="bg-white text-gray-900 font-sans leading-relaxed">
+<body class=" text-gray-900 font-sans leading-relaxed">
 
 <!-- HERO -->
 <section class="min-h-screen flex flex-col justify-center px-4 py-16 bg-[#caa872] relative overflow-hidden">
@@ -82,7 +82,7 @@
 
 
 <!-- DOR DO PACIENTE -->
-<section class="min-h-screen px-6 py-16 bg-gray-50 flex flex-col justify-center relative overflow-hidden section2">
+<section class="min-h-screen px-6 py-16 bg-gradient-to-b from-[#caa872] to-[#977251] flex flex-col justify-center relative overflow-hidden section2">
   <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover opacity-10 pointer-events-none z-0">
     <source src="videos/pain2.mp4" type="video/mp4">
   </video>
@@ -123,16 +123,19 @@
 </section>
 
 <!-- CONEXÃO COM A TERAPEUTA -->
-<section class="min-h-screen px-6 py-16 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
-  <img src="images/foto.png" alt="Foto da psicóloga Débora" class="w-full md:w-1/2 rounded-xl shadow-lg" />
-  <div class="md:w-1/2">
-    <h2 class="text-3xl font-bold mb-4">Olá, eu sou a Débora</h2>
-    <p class="text-gray-700 text-lg">Psicóloga especializada no cuidado emocional de adultos. Com escuta sensível, técnica e humana, ajudo pessoas como você a lidarem com as dores da alma e a se reconectarem com sua essência.</p>
+<section class="min-h-screen px-6 py-16 flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(to bottom, #977251, #e29c2d);">
+  <div class="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+    <img src="images/foto.png" alt="Foto da psicóloga Débora" class="w-full md:w-1/2 rounded-xl shadow-lg" />
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4 text-[#614229]">Olá, eu sou a Débora</h2>
+      <p class="text-gray-100 text-lg">Psicóloga especializada no cuidado emocional de adultos. Com escuta sensível, técnica e humana, ajudo pessoas como você a lidarem com as dores da alma e a se reconectarem com sua essência.</p>
+    </div>
   </div>
 </section>
 
+
 <!-- COMO FUNCIONA -->
-<section class="min-h-screen bg-gray-100 px-6 py-20 flex items-center relative overflow-hidden">
+<section class="min-h-screen px-6 py-20 flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(to bottom, #e29c2d, #614229);">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center z-10 animate__animated animate__fadeInUp animate__slow">
   
     <!-- Illustration (comes first on mobile too) -->
@@ -149,26 +152,26 @@
       <div class="grid grid-cols-2 gap-4">
         <!-- Bento card 1 -->
         <div class="bg-[#ffc803] rounded-lg p-6 shadow-md transition hover:shadow-lg animate__animated animate__fadeInUp animate__delay-2s">
-          <h3 class="text-lg font-semibold text-[#614229] mb-2">Flexibilidade</h3>
-          <p class="text-gray-700 text-sm">Escolha horários que se encaixem na sua rotina corrida.</p>
+          <h3 class="text-lg font-semibold text-white mb-2">Flexibilidade</h3>
+          <p class=" text-sm text-base">Escolha horários que se encaixem na sua rotina corrida.</p>
         </div>
 
         <!-- Bento card 2 -->
         <div class="bg-[#fd9407] rounded-lg p-6 shadow-md transition hover:shadow-lg animate__animated animate__fadeInUp animate__delay-2s">
-          <h3 class="text-lg font-semibold text-[#614229] mb-2">Conforto</h3>
-          <p class="text-gray-700 text-sm">Receba acolhimento no ambiente seguro do seu lar.</p>
+          <h3 class="text-lg font-semibold text-white mb-2">Conforto</h3>
+          <p class=" text-sm text-base">Receba acolhimento no ambiente seguro do seu lar.</p>
         </div>
 
         <!-- Bento card 3 -->
         <div class="rounded-lg p-6 shadow-md transition hover:shadow-lg animate__animated animate__fadeInUp animate__delay-2s">
-          <h3 class="text-lg font-semibold mb-2">Sigilo</h3>
-          <p class="text-gray-700 text-sm">Privacidade garantida para que você se sinta à vontade.</p>
+          <h3 class="text-lg font-semibold mb-2 text-white">Sigilo</h3>
+          <p class=" text-sm text-base">Privacidade garantida para que você se sinta à vontade.</p>
         </div>
 
         <!-- Bento card 4 -->
         <div class="rounded-lg p-6 shadow-md transition hover:shadow-lg animate__animated animate__fadeInUp animate__delay-2s">
-          <h3 class="text-lg font-semibold mb-2">Humanização</h3>
-          <p class="text-gray-700 text-sm">Atendimento empático e conectado, mesmo à distância.</p>
+          <h3 class="text-lg font-semibold mb-2 text-white">Humanização</h3>
+          <p class=" text-sm text-base">Atendimento empático e conectado, mesmo à distância.</p>
         </div>
       </div>
     </div>
@@ -288,36 +291,6 @@
   </div>
 </section>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    new Swiper('.testimonial-swiper', {
-      // Show one slide at a time
-      slidesPerView: 1,
-      spaceBetween: 20,
-      
-      // Enable autoplay
-      autoplay: {
-        delay: 5000, // 5 seconds
-        disableOnInteraction: false,
-      },
-      
-      // Enable loop (continuous cycling)
-      loop: true,
-      
-      // Add pagination dots
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      
-      // Smooth transitions
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true
-      },
-    });
-  });
-</script>
 
 <!-- CTA FINAL -->
 <section id="contato" class="min-h-screen px-6 py-16 text-center bg-[#fefefe]">
