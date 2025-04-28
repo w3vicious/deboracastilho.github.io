@@ -1,0 +1,31 @@
+@keyframes highlightFade {
+    0% { color: transparent; transform: translateY(30px); opacity: 0; }
+    50% { color: #614229; transform: translateY(0); opacity: 1; }
+    100% { color: #614229; }
+  }
+  .highlight-animated {
+    animation: highlightFade 1.4s ease-out forwards;
+  }
+  /* Customize the pagination dots */
+  .swiper-pagination-bullet {
+    background: #d1d5db;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #614229;
+  }
+  
+  /* Fade effect for smoother transitions */
+  .swiper-slide {
+    opacity: 0 !important;
+    transition: opacity 0.5s ease;
+  }
+  
+  .swiper-slide-active, 
+  .swiper-slide-duplicate-active {
+    opacity: 1 !important;
+  }
+

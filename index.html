@@ -13,38 +13,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
-  <style>
-    @keyframes highlightFade {
-      0% { color: transparent; transform: translateY(30px); opacity: 0; }
-      50% { color: #614229; transform: translateY(0); opacity: 1; }
-      100% { color: #614229; }
-    }
-    .highlight-animated {
-      animation: highlightFade 1.4s ease-out forwards;
-    }
-    /* Customize the pagination dots */
-    .swiper-pagination-bullet {
-      background: #d1d5db;
-      opacity: 1;
-      width: 10px;
-      height: 10px;
-    }
-    
-    .swiper-pagination-bullet-active {
-      background: #614229;
-    }
-    
-    /* Fade effect for smoother transitions */
-    .swiper-slide {
-      opacity: 0 !important;
-      transition: opacity 0.5s ease;
-    }
-    
-    .swiper-slide-active, 
-    .swiper-slide-duplicate-active {
-      opacity: 1 !important;
-    }
-  </style>
 </head>
 <body class=" text-gray-900 font-sans leading-relaxed">
 
@@ -83,12 +51,8 @@
 
 <!-- DOR DO PACIENTE -->
 <section class="min-h-screen px-6 py-16 bg-gradient-to-b from-[#caa872] to-[#977251] flex flex-col justify-center relative overflow-hidden section2">
-  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover opacity-10 pointer-events-none z-0">
-    <source src="videos/pain2.mp4" type="video/mp4">
-  </video>
-  <video autoplay loop muted playsinline class="absolute bottom-0 left-0 w-64 sm:w-80 opacity-20 pointer-events-none z-0">
-    <source src="videos/storm.mp4" type="video/mp4">
-  </video>
+  
+  
   <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     <div>
       <h2 class="text-3xl font-bold text-[#614229] leading-tight animate__animated animate__fadeInUp">
@@ -98,19 +62,19 @@
         Às vezes, o cansaço da mente pesa mais do que o do corpo. Identificar essas dores é o primeiro passo para se cuidar com amor e coragem.
       </p>
       <div class="mt-6 space-y-4 animate__animated animate__fadeInUp animate__delay-2s">
-        <div class="bg-white p-4 rounded-lg border-l-4 border-[#e29c2d]">
+        <div class="bg-white p-4 rounded-lg border-l-4">
           <h3 class="font-semibold text-[#614229]">Ansiedade</h3>
           <p class="text-sm text-gray-600">Preocupação constante, medo ou tensão fora de controle.</p>
         </div>
-        <div class="bg-white p-4 rounded-lg border-l-4 border-[#e29c2d]">
+        <div class="bg-white p-4 rounded-lg border-l-4">
           <h3 class="font-semibold text-[#614229]">Autoestima baixa</h3>
           <p class="text-sm text-gray-600">Você se sabota ou sente que não é suficiente?</p>
         </div>
-        <div class="bg-white p-4 rounded-lg border-l-4 border-[#e29c2d]">
+        <div class="bg-white p-4 rounded-lg border-l-4 ">
           <h3 class="font-semibold text-[#614229]">Relacionamentos difíceis</h3>
           <p class="text-sm text-gray-600">Conflitos, cobranças ou afastamentos frequentes?</p>
         </div>
-        <div class="bg-white p-4 rounded-lg border-l-4 border-[#e29c2d]">
+        <div class="bg-white p-4 rounded-lg border-l-4">
           <h3 class="font-semibold text-[#614229]">Cansaço mental</h3>
           <p class="text-sm text-gray-600">Você sente que não consegue mais lidar com tudo?</p>
         </div>
@@ -135,7 +99,7 @@
 
 
 <!-- COMO FUNCIONA -->
-<section class="min-h-screen px-6 py-20 flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(to bottom, #e29c2d, #614229);">
+<section class="min-h-screen px-6 py-20 flex items-center justify-center relative overflow-hidden" >
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center z-10 animate__animated animate__fadeInUp animate__slow">
   
     <!-- Illustration (comes first on mobile too) -->
@@ -293,13 +257,45 @@
 
 
 <!-- CTA FINAL -->
-<section id="contato" class="min-h-screen px-6 py-16 text-center bg-[#fefefe]">
-  <h2 class="text-3xl font-bold mb-4">Agende uma primeira conversa</h2>
-  <p class="mb-6 text-gray-700 text-lg">Vamos encontrar o melhor caminho para cuidar de você. O primeiro passo começa agora.</p>
-  <a href="https://wa.me/5500000000000" class="inline-block px-6 py-3 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 transition">
-    Falar pelo WhatsApp
-  </a>
+<section id="contato" class="min-h-screen px-6 py-24 flex flex-col items-center justify-center text-center relative overflow-hidden bg-gradient-to-br from-[#f9f6f1] to-[#fefefe]">
+
+  <!-- Fundo decorativo com leve animação -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#f9f6f1] to-[#e7e2dd] opacity-30 z-0 animate__animated animate__fadeIn"></div>
+
+  <div class="z-10 max-w-3xl space-y-8 animate__animated animate__fadeInUp animate__slow">
+    
+    <!-- Ilustração de calendário -->
+    <div class="flex justify-center">
+      <img src="images/calendarr.svg" alt="Agendamento de Consulta" class="w-32 h-32 md:w-40 md:h-40 animate__animated animate__zoomIn" />
+    </div>
+
+    <h2 class="text-4xl sm:text-5xl font-bold text-[#614229] leading-tight">
+      Vamos conversar?
+    </h2>
+
+    <p class="text-lg text-gray-700 leading-relaxed">
+      O primeiro passo para uma vida mais leve começa agora.<br>Agende uma primeira conversa personalizada.
+    </p>
+
+    <a href="https://wa.me/5500000000000" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-base font-semibold rounded-full text-lg hover:bg-[#1ebe5d] transition transform hover:scale-105 shadow-lg">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.52 3.48a12.08 12.08 0 0 0-17.04 0c-4.68 4.68-4.68 12.28 0 16.96l-1.64 5.52 5.68-1.64a12.07 12.07 0 0 0 16.96-16.96zM12 21.54a9.55 9.55 0 0 1-5.1-1.48l-.36-.24-3.36.96.96-3.36-.24-.36a9.55 9.55 0 1 1 8.1 4.48zm5.4-7.62c-.3-.15-1.8-.9-2.08-1-.27-.1-.46-.15-.66.15-.2.3-.76 1-.94 1.2-.17.2-.34.22-.64.08-.3-.15-1.26-.46-2.4-1.46-.88-.78-1.48-1.74-1.64-2.04-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.54-.07-.15-.66-1.6-.9-2.2-.24-.6-.48-.52-.66-.53h-.56c-.18 0-.47.07-.72.35s-.94.92-.94 2.22c0 1.3.96 2.54 1.1 2.7.14.18 1.88 2.86 4.56 4 .64.28 1.14.45 1.53.58.64.2 1.22.17 1.68.1.5-.08 1.54-.63 1.76-1.23.22-.6.22-1.1.15-1.22-.07-.13-.27-.2-.56-.34z"/>
+      </svg>
+      Falar pelo WhatsApp
+    </a>
+    <a href="https://wa.me/5500000000000" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-base font-semibold rounded-full text-lg hover:bg-[#1ebe5d] transition transform hover:scale-105 shadow-lg">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.5.4.6.2 1 .5 1.5 1s.8.9 1 1.5c.2.5.3 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.5.2-1.3.3-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.2-.5-.3-1.3-.4-2.5-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5.2-.6.5-1 1-1.5s.9-.8 1.5-1c.5-.2 1.3-.3 2.5-.4 1.3-.1 1.7-.1 4.9-.1M12 0C8.7 0 8.3 0 7 .1 5.7.2 4.7.4 3.9.7c-.9.3-1.7.7-2.4 1.4S.3 4 .7 4.9c.3.8.5 1.8.6 3.1C1.4 9.3 1.4 9.7 1.4 12s0 2.7.1 4c.1 1.3.3 2.3.6 3.1.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.8.5 3.1.6 1.3.1 1.7.1 4 .1s2.7 0 4-.1c1.3-.1 2.3-.3 3.1-.6.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.8.6-3.1.1-1.3.1-1.7.1-4s0-2.7-.1-4c-.1-1.3-.3-2.3-.6-3.1-.3-.8-.7-1.5-1.4-2.2-.7-.7-1.4-1.1-2.2-1.4-.8-.3-1.8-.5-3.1-.6C14.7 0 14.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8.1 4 4 0 0 1 0 8.1zm6.4-11.4a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+      </svg>
+      Conteúdos que cuidam de você
+    </a>
+  </div>
 </section>
+<div class="text-center text-gray-500 mt-4">
+  &copy; 2025 Todos os direitos reservados.
+</div>
+
+
 
 <script src="js/lottie-init.js"></script>
 <script src="js/index.js"></script>
